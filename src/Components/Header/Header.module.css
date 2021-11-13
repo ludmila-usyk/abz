@@ -1,0 +1,14 @@
+.header {
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+}
+
+.logo {
+    margin-left: 17px;
+}
+.menu {
+    margin-right: 17px;
+}
