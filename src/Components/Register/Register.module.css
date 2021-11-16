@@ -14,6 +14,7 @@
     border: none;
     margin: 50px 0 25px 0;
     color: white;
+    cursor: pointer;
 }
 
 .title {
@@ -36,8 +37,17 @@
 }
 
 .img {
-    width: 100%;
     background-color: #E0E0E0;
+    position: relative;
+    z-index: 4;
+    bottom: 0;
+    right: 0;
+}
+@media screen and (min-width: 768px) {
+    .imgCard {
+    display: flex;
+    justify-content: flex-end;
+    }
 }
 
 .input {
@@ -74,8 +84,24 @@
     position: absolute;
     padding: 14px;
 }
+@media screen and (min-width: 768px) {
+    .upload {
+    margin-top: 48px;
+    }
+}
 
 .block {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .form {
+    margin: 0 194px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .form {
+    margin: 0 322px;
+    }
 }

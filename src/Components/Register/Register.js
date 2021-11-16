@@ -4,10 +4,10 @@ import foot from './Footprint.svg';
 export default function Register() {
     return (
         <>
-        <section className={s.register}>
+        <section className={s.register}  id="Sign-Up">
             <h2 className={s.title}>Register to get a work</h2>
             <p className={s.content}>Your personal data is stored according to the Privacy Policy</p>
-            <form>
+            <form className={s.form}>
                 <input
                     className={s.input}            
                     type="text"
@@ -26,7 +26,7 @@ export default function Register() {
                     pattern="\+?[0-9\s\-\(\)]+"
                     title="Phone number should only contain ) ( + - and numbers"/>
                 
-                <p className={s.select}>Select your position</p>
+                <p className={s.select}  id="Requirements">Select your position</p>
                 <p className={s.label}> <input 
                     type="radio" name="contact"/>
                     Frontend developer</p>
@@ -36,14 +36,15 @@ export default function Register() {
                    Designer</p>
                 <p className={s.label}> <input type="radio" name="contact"/>
                    QA</p>
-                <p><button type="submit" className={s.load}>Upload</button><input type="text" className={s.takePhoto} placeholder="Upload your photo"/></p>
-
+                <p className={s.upload}><button type="submit" className={s.load}>Upload</button><input type="text" className={s.takePhoto} placeholder="Upload your photo"/></p>
 
                  <div className={s.block}><button type="button" className={s.button}>Sign up</button></div>
             </form>
 
         </section>
-        <img className={s.img} src={foot} alt="footprint"/>
+        <div className={s.imgCard}>
+            <img className={s.img} src={foot} alt="footprint"/>
+        </div>
     </>
     ); 
   }

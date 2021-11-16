@@ -1,16 +1,48 @@
 .heroTitle {
     margin-bottom: 21px;
-    padding-top: 51px;
     font-family: Nunito;
+    padding-top: 51px;
 }
 
-.heroContent {
+@media screen and (min-width: 768px){
+    .heroTitle{
+    font-size: 40px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.87);
+    padding-top: 81px;
+    }
+}
+
+.heroContentMob {
     margin-bottom: 32px;
     font-size: 16px;
     line-height: 1.63;
     font-family: Nunito;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.87);;
+}
+
+@media screen and (min-width: 767.98px){
+    .heroContentMob{
+    display: none;
+    }
+}
+
+@media screen and (max-width: 767.98px){
+    .heroContentTablet{
+    display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .heroContentTablet{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 32px;
+    }
 }
 
 .heroButton {
@@ -20,18 +52,44 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 80px;
     border: none;
+    cursor: pointer;
 }
 
 .heroBg {
     background-color: #EDECEA;
+    background-image: url(./mob.png);
+    background-repeat: no-repeat;
     height: 469px;
-    background-repeat: round;
-    background-image: url('./hero.png');
     margin-bottom: 138px;
+    background-position: right;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media screen and (min-width: 768px) {
+    .heroBg {
+    background-image: url(./tab.png);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .heroBg {
+    background-image: url(./desk.png);
+    }
 }
 
 .hero {
     padding-left: 16px;
     padding-right: 104px;
 }
+
+@media screen and (min-width: 768px) {
+    .hero {
+    margin-left: 60px;
+    margin-right: 294px;
+    }
+}
+
+/* .img {
+    width: 100%;
+    z-index: -5;
+} */
